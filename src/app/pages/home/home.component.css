@@ -1,6 +1,8 @@
+.accordion-body{
+    text-align: justify;
+}
 .overlay-box {
     position: relative;
-    display: inline-block;
     overflow-y: auto;
 }
 
