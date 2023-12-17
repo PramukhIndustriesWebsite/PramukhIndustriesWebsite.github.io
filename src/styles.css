@@ -4,4 +4,15 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer */
     user-select: none;
+
+
+}
+
+::-webkit-scrollbar {
+    user-select: none;
+}
+
+/* Optional: Hide the scrollbar */
+::-webkit-scrollbar {
+    display: none;
 }
