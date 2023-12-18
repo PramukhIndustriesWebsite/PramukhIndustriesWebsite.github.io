@@ -1,4 +1,4 @@
-  import { Component, OnInit } from '@angular/core';
+  import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +6,17 @@
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  activeLinkNum = 0;
+  @Output() changeActiveLink: EventEmitter<number> = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  setActiveLinkNum(num: number) {
+    this.activeLinkNum = num;
+    this.changeActiveLink.emit(num);
   }
 
 }

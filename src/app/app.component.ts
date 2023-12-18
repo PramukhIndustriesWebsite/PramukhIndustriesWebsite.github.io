@@ -7,4 +7,8 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 })
 
 export class AppComponent{
+  activeLink = 0;
+  setActiveLink(num: number) {
+    this.activeLink = num;
+  }
 }
