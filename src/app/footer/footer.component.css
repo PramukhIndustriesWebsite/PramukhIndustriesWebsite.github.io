@@ -1,0 +1,10 @@
+* {
+    background-color:  #212529;
+    color: white;
+    overflow: hidden;
+}
+
+.copyright {
+    margin: 0;
+    font-weight: lighter;
+}
