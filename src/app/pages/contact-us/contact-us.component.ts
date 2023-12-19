@@ -15,7 +15,11 @@ export class ContactUsComponent implements OnInit {
   protected readonly open = open;
   protected readonly window = window;
 
-  openLinkInNewTab(url: string): void {
-    window.open(url, '_blank');
+  openLinkInNewTab(url: string, sameTab?: boolean): void {
+    if(sameTab) {
+      window.open(url);
+    } else {
+      window.open(url, '_blank');
+    }
   }
 }
