@@ -12,4 +12,10 @@ export class ContactUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  protected readonly open = open;
+  protected readonly window = window;
+
+  openLinkInNewTab(url: string): void {
+    window.open(url, '_blank');
+  }
 }
